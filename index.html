@@ -9,25 +9,76 @@
    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
    <title>jQuery Mobile</title>
+   <style>
+   .ui-content .h1{
+       color:#5e87b0;
+       font-size: 17px;
+       text-shadow:1px 0 0 #fff;
+   }
+   </style>
 </head>
 
 <body>
-   <div data-role="page">
+   <div data-role="page" id="index">
       <div data-role="header">
-         <h1>header</h1>
+         <h1>to-R</h1>
       </div>
-      <!---->
-      <div role="main" class="ui-content">
-         <h2>content</h2>
-         <p>「企業のカッコいいスマートフォンサイトのまとめ」と「jQueryMobileを使ったスマホサイト作成方法」の紹介をしております。</p>
-         <p>また簡単にスマホサイトが作れる「簡単スマホサイト作成ツール」や「無料スマホサイトテンプレート」などの便利ツールもあります。</p>
-         <p>スマホサイトを作成する際のデザインの参考などにご活用ください。</p>
+      <div data-role="content">
+         <ul data-role="listview" dara-theme="a" data-inset="true">
+            <li data-role="list-divider">Menu</li>
+            <li>
+               <a href="#about" data-transition="slide">
+                  <h3>to-Rについて</h3>
+               </a>
+            </li>
+            <li>
+               <a href="#seminar">
+                  <h3>セミナー情報</h3>
+               </a>
+            </li>
+            <li>
+               <a href="#access">
+                  <h3>アクセス</h3>
+               </a>
+            </li>
+            <li>
+               <a href="#contact">
+                  <h3>お問い合わせ</h3>
+               </a>
+            </li>
+         </ul>
       </div>
-      <!---->
-      <div data-role="footer">
-         <h3>footer</h3>
+      <div data-role="footer" data-theme="a">
+         <h4>&copy; 2017 to-R</h4>
       </div>
    </div>
+
+   <div data-role="page" id="about">
+       <div data-role="header">
+           <p><a href="#index" data-icon="check" data-direction="reverse" data-transition="slide">TOP</a></p>
+           <h1>to-R</h1>
+       </div>
+       <div data-role="content">
+           <h2 class="h1">to-Rについて</h2>
+           <p>to-R&#40;トゥーアル&#41;は東京を中心に活動するWeb制作事務所です。</p>
+           <p>PHPやJavaScript/Ajaxによるシステム開発や、MovableTypeなどのCMSを利用した、
+               WEBサイト制作、SEO対策・SEM対策などのマーケティング、コンサルティングを行なっております。
+           </p>
+           <h2 class="h1">西畑一馬について</h2>
+           <p>1979年生まれ</p>
+           <p>主な著書に&#12300;<a href="#">Web制作の現場で使うjQueryデザイン入門</a>&#12301;、
+               &#12300;<a href="#">現場のプロから学ぶXHTML+CSS</a>&#40;毎日コミュニケーションズ/共著&#41;&#12301;があり、
+           セミナー/公園なども多数行う。</p>
+       </div>
+       <div data-role="footer">
+           <h4>&copy; 2018 to-R</h4>
+       </div>
+   </div><!-- about -->
+
+   <div data-role="page" id="seminar">
+   </div>
+   <div data-role="page" id="access">アクセス</div>
+   <div data-role="page" id="contact">お問い合わせ</div>
 </body>
 
 </html>
